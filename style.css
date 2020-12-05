@@ -1,0 +1,78 @@
+* {
+    /*font-family: "Courier";*/
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .body {
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .melhor {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  
+  .stats {
+    font-size: 30px;
+    color:blue;
+  }
+
+  .titulo {
+      font-size:40px;
+      font-weight: bold;
+      text-align: center;
+      font-family: 'Nunito', sans-serif;
+  }
+
+  .nome {
+    font-size:20px;
+    font-weight: bold;
+    margin-left:20px;
+}
+
+.all {
+    font-size:17px;
+    padding-right: 20px;
+}
+
+#grafico {
+    margin-left:70px;
+}
+
+.botaoParar {
+  margin-left:70px;
+  font-size:30px;
+}
+
+#divLista {
+  display:inline-flex;
+  flex-direction: row;
+  margin-left:30px;
+  border: 2px solid black;
+  margin-top: 50px;
+  height:1000px;
+  width:1300px;
+  overflow:auto;
+}
+
+#inputAlvo{
+  width:1200px;
+}
+
+#divInline {
+  display:inline-flex;
+  flex-direction: row;
+  margin-left:30px;
+}
+
+#textoFim{
+  color:red;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left:30px;
+}
+
+#divMelhor{
+  margin-left:70px;
+}

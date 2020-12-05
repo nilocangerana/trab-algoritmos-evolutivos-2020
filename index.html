@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;600;700;800;900&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <p class='titulo'>Projeto de SSC0713: Sistemas Evolutivos Aplicados a Robótica</p>
+  <p class='nome'>Nome: Nilo Conrado Messias Alves Cangerana   -   Número USP: 9805362</p>
+  <p class='nome'>Nome: Gabriel Caurin Corrêa                  -   Número USP: 9805081</p>
+  <div id='divInline'>
+    <input id='inputAlvo' type="text" class='botaoParar' value=""></input>
+    <button class='botaoParar' onclick="inicializar()">Iniciar</button>
+    <button class='botaoParar' onclick="pararLoop()">Parar</button>
+    <p id='textoFim'></p>
+  </div>
+  <div id='divMelhor'></div>
+  <div id='grafico'></div>
+  <div id='divLista'></div>
+
+  <script src="DNA.js"></script>
+  <script src="population.js"></script>
+  <script src="sketch.js"></script>
+  
+
+</body>
+
+</html>
