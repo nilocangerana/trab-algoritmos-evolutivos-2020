@@ -1,10 +1,10 @@
-Nome: Nilo Conrado Messias Alves Cangerana  -  Número USP: 9805362
+Nome: Nilo Conrado Messias Alves Cangerana  -  Número USP: 9805362  
 Nome: Gabriel Caurin Corrêa  -  Número USP: 9805081
 
 # Projeto de SSC0713 - Sistemas Evolutivos Aplicados a Robótica
 ## Reconhecimento Evolutivo de Strings
 
-### Link para o video:
+### Link para o vídeo:
 [Vídeo](https://www.youtube.com/watch?v=CL7047u1Gvo&feature=youtu.be)
 
 ### Relatório:
