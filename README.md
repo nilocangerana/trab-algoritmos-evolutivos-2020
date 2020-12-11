@@ -7,6 +7,9 @@ Nome: Gabriel Caurin Corrêa  -  Número USP: 9805081
 ### Link para o vídeo:
 [Vídeo](https://www.youtube.com/watch?v=CL7047u1Gvo&feature=youtu.be)
 
+### Funcionamento:
+O algoritmo consiste em tentar evoluir uma população de frases aleatórias até uma frase alvo passada pelo usuário do programa. O algoritmo inicia uma população de frases aleatórias e evolui até que a melhor solução seja encontrada.
+
 ### Instruções para execução:
 O projeto foi feito em javascript, portanto basta iniciar o arquivo index.html em qualquer navegador de internet.  
   
