@@ -14,6 +14,7 @@ O algoritmo consiste em tentar evoluir uma população de frases aleatórias at�
 O projeto foi feito em javascript, portanto basta abrir o arquivo **index.html** em qualquer navegador de internet.  
   
 Ao iniciar, o programa possui uma caixa de texto onde pode-se escrever uma frase alvo na qual o algoritmo tentará evoluir frases aleatórias até atingir a frase alvo.  
+A frase alvo deve conter apenas caracteres: : ; + - = [ ] \ ^ _ ` espaço 0-9 A-Z a-z
   
 Ao digitar a frase, clique no botão **Iniciar** para rodar o algoritmo. O algoritmo pode ser parado a qualquer momento clicando no botão **Parar**.  
   
