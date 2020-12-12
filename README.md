@@ -27,9 +27,9 @@ O programa possui 3 classes:
 -DNA.js: representa um membro da população. Possui uma string de caracteres do tamanho da frase alvo. Também possui uma variável que armazena o fitness desse membro.  
 -sketch.js: essa classe é usada para iniciar o programa e mostrar os elementos na tela.  
   
-O programa possui 2 arquivos extras:
--index.html: uma página HTML para exibir informações na tela.
--style.css: para configurar o estilo e a forma dos elementos dispostos na tela
+O programa possui 2 arquivos extras:  
+-index.html: uma página HTML para exibir informações na tela.  
+-style.css: para configurar o estilo e a forma dos elementos dispostos na tela  
   
 O programa inicia criando um objeto de Population.js que armazena a população. Todos os membros são gerados como um objeto de DNA.js, com letras aleatórias e seu fitness é calculado.  
 O fitness é calculado como o número de letras corretas na posição correta em relação a frase alvo, dividido pelo tamanho da frase alvo. Esse valor é elevado a quarta potência para que o elemento com maior fitness em relação a outros possua uma vantagem exponencial, pois o valor do fitness influencia em quem será escolhido para se reproduzir.  
