@@ -22,8 +22,12 @@ Quando o algoritmo termina ou é parado, é mostrado um gráfico contendo o fitn
 
 ### Explicação do Código:
 O programa possui 3 classes:  
--Population.js: um objeto dessa classe é criado para representar a população no algoritmo. Possui um vetor que armazena todos os membros da população.
--DNA.js: representa um membro da população. Possui um vetor de caracteres do tamanho da frase alvo. Também possui uma variável que armazena o fitness desse membro.
+-Population.js: um objeto dessa classe é criado para representar a população no algoritmo. Possui um vetor que armazena todos os membros da população.  
+-DNA.js: representa um membro da população. Possui um vetor de caracteres do tamanho da frase alvo. Também possui uma variável que armazena o fitness desse membro.  
 -sketch.js: essa classe é usada para iniciar o programa e mostrar os elementos na tela.  
   
-O programa inicia criando um objeto de Population.js
+O programa inicia criando um objeto de Population.js que armazena a população. Todos os membros são gerados como um objeto de DNA.js, com letras aleatórias e seu fitness é calculado.  
+O fitness é calculado como o número de letras corretas na posição correta em relação a frase alvo, dividido pelo tamanho da frase alvo. Esse valor é elevado a quarta potência para que o elemento com maior fitness em relaçao a outros possua uma vantagem exponencial, pois o valor do fitness influencia em quem será escolhido para se reproduzir.  
+Todos os elementos são gerados e seus fitness são calculados e armazenados. Com a população gerada, o elemento que possui o maior fitness(melhor de todos) é armazenado.  
+  
+Com isso, o algoritmo prec
