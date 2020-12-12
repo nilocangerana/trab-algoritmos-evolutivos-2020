@@ -11,7 +11,7 @@ Nome: Gabriel Caurin Corrêa  -  Número USP: 9805081
 O algoritmo consiste em tentar evoluir uma população de frases aleatórias até uma frase alvo passada pelo usuário do programa. O algoritmo inicia uma população de frases aleatórias e evolui até que a melhor solução seja encontrada.
 
 ### Instruções para execução:
-O projeto foi feito em javascript, portanto basta iniciar o arquivo index.html em qualquer navegador de internet.  
+O projeto foi feito em javascript, portanto basta abrir o arquivo **index.html** em qualquer navegador de internet.  
   
 Ao iniciar, o programa possui uma caixa de texto onde pode-se escrever uma frase alvo na qual o algoritmo tentará evoluir frases aleatórias até atingir a frase alvo.  
   
@@ -26,6 +26,10 @@ O programa possui 3 classes:
 -Population.js: um objeto dessa classe é criado para representar a população no algoritmo. Possui um vetor que armazena todos os membros da população.  
 -DNA.js: representa um membro da população. Possui uma string de caracteres do tamanho da frase alvo. Também possui uma variável que armazena o fitness desse membro.  
 -sketch.js: essa classe é usada para iniciar o programa e mostrar os elementos na tela.  
+  
+O programa possui 2 arquivos extras:
+-index.html: uma página HTML para exibir informações na tela.
+-style.css: para configurar o estilo e a forma dos elementos dispostos na tela
   
 O programa inicia criando um objeto de Population.js que armazena a população. Todos os membros são gerados como um objeto de DNA.js, com letras aleatórias e seu fitness é calculado.  
 O fitness é calculado como o número de letras corretas na posição correta em relação a frase alvo, dividido pelo tamanho da frase alvo. Esse valor é elevado a quarta potência para que o elemento com maior fitness em relação a outros possua uma vantagem exponencial, pois o valor do fitness influencia em quem será escolhido para se reproduzir.  
