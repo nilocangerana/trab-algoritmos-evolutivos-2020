@@ -18,7 +18,8 @@ Ao iniciar, o programa possui uma caixa de texto onde pode-se escrever uma frase
 Ao digitar a frase, clique no botão **Iniciar** para rodar o algoritmo. O algoritmo pode ser parado a qualquer momento clicando no botão **Parar**.  
   
 Quando o algoritmo termina ou é parado, é mostrado um gráfico contendo o fitness do melhor de todos e o fitness médio da população em relação ao número de gerações. Também é mostrado na tela a melhor frase obtida, parâmetros como: taxa de mutação, número da população, fitness, número de gerações e uma tabela de 100 membros da geração inicial e 100 membros da geração atual. 
-
+  
+Para iniciar o algoritmo após terminado, basta recarregar a página do navegador.
 
 ### Explicação do Código:
 O programa possui 3 classes:  
@@ -39,4 +40,6 @@ O filho gerado pode sofrer mutação em sua string de caracteres. Cada caracter 
   
 Com a nova geraçao criada, o programa repete o loop: calcula fitness de todos, armazena elementos no vetor em quantidades diferentes, escolhe elementos desse vetor, faz o crossover, mutação e assim por diante.  
   
-O programa só termina corretamente quando o fitness do melhor de todos atinge o valor de 1, ou seja, o melhor de todos possui todas as letras certas na posição correta em relação a frase alvo.
+O programa só termina corretamente quando o fitness do melhor de todos atinge o valor de 1, ou seja, o melhor de todos possui todas as letras certas na posição correta em relação a frase alvo.  
+  
+O código está todo comentado para maiores detalhes da implementação.
