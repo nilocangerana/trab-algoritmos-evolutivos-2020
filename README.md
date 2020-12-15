@@ -48,3 +48,12 @@ Com a nova geraçao criada, o programa repete o loop: calcula fitness de todos, 
 O programa só termina corretamente quando o fitness do melhor de todos atinge o valor de 1, ou seja, o melhor de todos possui todas as letras certas na posição correta em relação a frase alvo.  
   
 O código está todo comentado para maiores detalhes da implementação.
+
+### Atualização:
+Foi realizada uma atualização na função do crossover. Ao invés de concatenar as strings do pai e da mãe, foi implementado um método de gerar o filho caracter por caracter da seguinte maneira:  
+Se o pai possui o caracter da frase alvo na posição correta, ele passa para o filho.  
+Senão, se a mãe possui o caracter da frase alvo na posição correta, ela passa para o filho.  
+Se os dois não tiverem o caracter correto, ocorre uma alternancia entre o caracter do pai ou da mãe que vai para o filho.  
+Isso é feito até que o filho possua todos os caracteres necessários para sua string.  
+  
+Com essa mudança, foi observado que a eficiência do algoritmo aumentou muito, possibilitando o processamento de frases muito maiores que antes. O algoritmo também está convergindo de forma muito rápida.
