@@ -94,7 +94,7 @@ class Population {
           let parceiroB = this.acasalamento[b]; //o parceiroB é escolhido pelo valor b obtido
           //O parceiroA e B sao objetos DNA escolhidos do vetor acasalamento.addCarrinho
           //O filho é obtido com o crossover dos dois
-          let filho = parceiroA.crossover(parceiroB);
+          let filho = parceiroA.crossover(parceiroB,this.alvo);
           //o filho executa a funcao de mutacao
           filho.mutacao(this.taxaMutacao);
           //o membro i da populacao antiga é substituido pelo filho novo

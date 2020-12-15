@@ -41,16 +41,46 @@ function novoChar() {
     }
   
     // Crossover
-    crossover(parceiro) {
+    crossover(parceiro, alvo) {
       // cria um filho novo
       let filho = new DNA(this.genes.length);
   
-      let pntMed = floor(random(this.genes.length)); // Escolhe um ponto médio aleatorio do vetor gene
+      /*let pntMed = floor(random(this.genes.length)); // Escolhe um ponto médio aleatorio do vetor gene
        // Metade de um, metade do outro
       for (let i = 0; i < this.genes.length; i++) {
         if (i > pntMed) filho.genes[i] = this.genes[i];
         else filho.genes[i] = parceiro.genes[i]; //adiciona ao vetor filho, metade de um e metade do outro
+      } */
+      let flagA=1; //se vale 1, pega caracter do parceiro A
+
+      for (let i = 0; i < this.genes.length; i++) {
+        if(this.genes[i]==alvo.charAt(i)) //se letra de A é igual a letra na frase alvo
+        {
+          filho.genes[i]=this.genes[i]; //pega letra de A
+        }
+        else
+        {
+          if(parceiro.genes[i]==alvo.charAt(i)) //se letra de B é igual a letra na frase alvo
+          {
+            filho.genes[i]=parceiro.genes[i]; //pega letra de B
+          }
+          else //se letra de A e B nao é letra da frase alvo, alterna entre pegar letra de A e de B
+          {
+              if(flagA==1)
+              {
+                filho.genes[i]=this.genes[i];
+                flagA=0;
+              }
+              else
+              {
+                filho.genes[i]=parceiro.genes[i];
+                flagA=1;
+              }
+          }
+        }
+
       }
+
       return filho; //retorna filho
     }
   
